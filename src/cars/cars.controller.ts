@@ -34,8 +34,7 @@ export class CarsController {
 
     @Post()
     createCar( @Body() createCarDTO: CreateCarDTO ) {
-        return createCarDTO;
-        
+        return this.carService.create( createCarDTO );
     }
 
     @Patch(':id')
@@ -44,7 +43,6 @@ export class CarsController {
         @Body() body: any
     ) {
         return {id, body};
-        
     }
 
     @Delete(':id')
@@ -53,7 +51,6 @@ export class CarsController {
             method: 'DELETE',
             id
         };
-        
     }
 
 }
