@@ -4,7 +4,11 @@ import { BrandsModule } from './brands/brands.module';
 import { SeedModule } from './seed/seed.module';
 
 @Module({
-  imports: [ CarsModule, BrandsModule, SeedModule ],
+  imports: [ 
+    CarsModule, 
+    BrandsModule, 
+    SeedModule 
+  ],
   controllers: [],
   providers: [],
   exports: []
